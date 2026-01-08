@@ -1,16 +1,10 @@
 <?php
 /**
- * Plugin WhatsApp para osTicket - Versión Simplificada
- * 
- * Integra WhatsApp como canal principal de comunicación usando WaAPI.app
- * Versión básica funcional para evitar errores de dependencias
- * 
- * @author quintana1308 <andres.leguizamon@sistemasadn.com>
- * @version 1.0.0
- * @date Enero 2026
+ * Plugin WhatsApp Simplificado para osTicket
+ * Versión básica que evita dependencias complejas
  */
 
-// Solo incluir clases base necesarias
+// Solo incluir si no está ya incluido
 if (!class_exists('Plugin')) {
     require_once INCLUDE_DIR . 'class.plugin.php';
 }
@@ -45,14 +39,14 @@ class WhatsAppPlugin extends Plugin {
      * Bootstrap del plugin
      */
     function bootstrap() {
-        // Bootstrap básica
+        // Bootstrap básico
         return true;
     }
     
     /**
      * Desinstalar el plugin
      */
-    function uninstall(&$errors) {
+    function uninstall() {
         return true;
     }
 }

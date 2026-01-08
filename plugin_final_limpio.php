@@ -37,7 +37,6 @@ class WhatsAppPlugin extends Plugin {
      * Inicialización del plugin
      */
     function init() {
-        // Inicialización básica
         return true;
     }
     
@@ -45,7 +44,6 @@ class WhatsAppPlugin extends Plugin {
      * Bootstrap del plugin
      */
     function bootstrap() {
-        // Bootstrap básica
         return true;
     }
     
@@ -107,6 +105,5 @@ class WhatsAppPluginConfig extends PluginConfig {
     }
 }
 
-// Registrar el plugin
 return new WhatsAppPlugin();
 ?>

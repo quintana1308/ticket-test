@@ -1,0 +1,28 @@
+{
+    "name": "WhatsApp Integration",
+    "version": "1.0.0",
+    "description": "Integra WhatsApp como canal principal de comunicación usando WaAPI.app",
+    "author": "quintana1308",
+    "author_email": "aquintana@sistemasadn.com",
+    "url": "https://github.com/quintana1308/osticket-whatsapp-plugin",
+    "main": "plugin.php",
+    "config": "config.php",
+    "requires": {
+        "osticket": ">=1.15.0"
+    },
+    "files": [
+        "plugin.php",
+        "config.php",
+        "class.waapi.php",
+        "class.whatsapp-handler.php",
+        "class.whatsapp-templates.php",
+        "webhook.php",
+        "install.php"
+    ],
+    "directories": [
+        "assets",
+        "templates",
+        "migrations",
+        "tests"
+    ]
+}
